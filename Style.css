@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+body{
+    background-image: url('car-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container{
+    height: 90vh;
+    margin: 0px 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+
+
+}
+/* NavigationBar */
+nav{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+}
+.fa-car{
+    font-size: 25px;
+}
+.menuOptions ul{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: center;
+    gap: 25px;
+}
+.menuOptions ul li span a{
+    background-color:rgb(27, 171, 254);
+    padding: 8px;
+
+}
+
+/* Section-1 */
+.section-1{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+.section-1 p{
+    font-size: large;
+}
+
+.section-1 h1{
+    color: rgb(27, 171, 254);
+    
+
+}
+
+.section-1 span{
+    width: 12vw;
+    background-color:rgb(27, 171, 254);
+    padding: 5px 14px;
+}
+
+/* Footer Section */
+
+.footerSection{
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 250px;
+}
+.footerHeading p{
+    color: rgb(27, 171, 254);
+    font-size: large;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1262px){
+    .container{
+        height: 90vh;
+        margin: 0px 200px;
+    
+    }
+    .section-1 span{
+        width: 14vw;
+        padding: 5px 14px;
+    }
+    .menuOptions ul{
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .footerSection{
+        padding: 0px 200px;
+    }
+
+
+}
+@media screen and (max-width: 1150px){
+    .container{
+        margin: 0px 150px;
+    
+    }
+    .section-1 span{
+        width: 15vw;
+        padding: 5px 14px;
+    }
+    .menuOptions ul{
+        font-size: 20px;
+        gap: 17px;
+    }
+    .footerSection{
+        padding: 0px 150px;
+    }
+
+}
+@media screen and (max-width: 1020px){
+    .container{
+        margin: 0px 100px;
+    
+    }
+    .section-1 span{
+        width: 16vw;
+        padding: 5px 14px;
+    }
+    .menuOptions ul{
+        font-size: 20px;
+        gap: 20px;
+    }
+    .footerSection{
+        padding: 0px 100px;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    .container{
+        margin: 0px 50px;
+    
+    }
+    .section-1 span{
+        width: 17vw;
+        padding: 5px 14px;
+    }
+    .menuOptions ul{
+        font-size: 20px;
+        gap: 18px;
+    }
+    .footerSection{
+        padding: 0px 50px;
+    }
+
+}
+
+@media screen and (max-width: 792px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+
+    }
+    nav{
+        width: 30vw;
+        height: 100%;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .section-1{
+        width: 70vw;
+    }
+    .menuOptions ul{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .footerSection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* align-items: center; */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: rgb(0, 0, 0);
+        padding: 0px 25px;
+    }
+
+}
